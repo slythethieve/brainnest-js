@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./game.js" defer></script>
+    <title> RPS </title>
+</head>
+<body>
+    <!-- Title -->
+    <div class="title">
+        <h1> Rock, Paper, Scissors </h1>
+        <h2> First who gets to 5 wins. Good luck! </h2>
+    </div>
+    
+    <!-- Player's choices -->
+    <div class="choices-container">
+        <button class="button">
+            <img
+                src="./images/rock.png"
+                class="player-choice"
+                data-choice="rock">
+        </button>
+        <button class="button">
+            <img
+                src="./images/paper.png"
+                class="player-choice"
+                data-choice="paper">
+        </button>
+        <button class="button">
+            <img
+                src="./images/scissors.png"
+                class="player-choice"
+                data-choice="scissors">
+        </button>
+    </div>
+    
+    <!-- Current Score -->
+    <div class="current-score-container">
+        <div> 
+            Player Score
+            <span id="player-score"> 0 </span>
+        </div>
+        <div> 
+            Computer Score
+            <span id="computer-score"> 0 </span>
+        </div>
+    </div>
+
+    <!-- Score Record -->
+    <div class="score-record-container">
+        <div> 
+            Player Wins
+            <span id="player-wins"> 0 </span>
+        </div>
+        <div> 
+            Computer Wins
+            <span id="computer-wins"> 0 </span>
+        </div>
+    </div>
+</body>
+</html>
