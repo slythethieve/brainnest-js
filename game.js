@@ -24,8 +24,8 @@ choicesButtons.forEach(choicesButtons => {
         let choiceName = choicesButtons.dataset.choice;
         let choiceObj = CHOICES.find(choice => choice.name == choiceName);
         playRound(choiceObj);
-    })
-})
+    });
+});
 
 function playRound(playerChoice) {
     let computerChoice = computerPlay();
